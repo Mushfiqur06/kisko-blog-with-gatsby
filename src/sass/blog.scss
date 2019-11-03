@@ -1,0 +1,58 @@
+@import './common.scss';
+
+.blogSection{
+    padding: 80px 0;
+
+    &__wrapper{
+        background-color: #fff;
+        padding: 0.9375rem;
+        border-radius: 5px;
+        
+    }
+    &__img{
+        margin-bottom: 0.9375rem;
+        overflow: hidden;
+        img{
+            width: 100%;
+            margin: 0;
+            transition: all .3s ease-in-out;
+        }
+    }
+    &__header{
+        overflow: hidden;
+        &--postDate{
+            float: left;
+            font-size: 0.8125rem;
+            color: #464545;
+            margin-right: 15px;
+            margin-bottom: 0;
+
+            svg{
+                margin-right: 4px;
+            }
+        }
+        &--authorName{
+            float: left;
+            font-size: 0.8125rem;
+            color: #464545;
+            text-transform: capitalize;
+            margin-bottom: 0;
+
+            svg{
+                margin-right: 4px;
+            }
+        }
+    }
+
+    &__content{
+        p{
+            margin-bottom: 0;
+            color: #464545;
+        }
+    }
+}
+
+.blogSection__wrapper:hover .blogSection__img img{
+    -webkit-transform: scale(1.08);
+  transform: scale(1.08);
+}
