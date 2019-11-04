@@ -1,0 +1,17 @@
+@import './common.scss';
+
+.footer{
+    background-color: #fff;
+    padding: 20px 0;
+
+    .copyrightInfo{
+        p{
+            margin: 0;
+            color: #464545;
+
+            a{
+                font-weight: 500;
+            }
+        }
+    }
+}
