@@ -1,0 +1,42 @@
+@import './common.scss';
+
+.newPostSection{
+    padding: 80px 0;
+
+    .newPostWrapper{
+        padding: 60px;
+        background: $white-color;
+        border-radius: 5px;
+
+        .form-group{
+            .form-label{
+                color: #464545;
+                margin: 0;
+            }
+            .form-control{
+                height: 50px;
+
+                &:focus{
+                    border-color: $primary-color;
+                }
+            }
+            textarea{
+                height: 150px !important;
+            }
+        }
+        .postBtn{
+            background-color: $seconday-color;
+            color: $white-color;
+            padding: 8px 25px;
+            border: 0;
+
+            &:focus{
+                outline: 0;
+                box-shadow: none;
+            }
+            &:hover{
+                background-color: $primary-color;
+            }
+        }
+    }
+}
